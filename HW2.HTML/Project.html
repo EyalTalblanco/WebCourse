@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./MainPage.css" />
+    <title>Project</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="./MainPage.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li><a href="./MainPage.html">Home</a></li>
+        <li><a href="./About.html">About</a></li>
+        <li><a href="./Project.html">Project</a></li>
+        <li><a href="./Skills.html">Skills</a></li>
+      </ul>
+
+      <ul>
+        <li><a href="./MainPage.html">Home</a></li>
+        <li class="hideonmobile"><a href="./About.html">About</a></li>
+        <li class="hideonmobile"><a href="./Project.html">Project</a></li>
+        <li class="hideonmobile"><a href="./Skills.html">Skills</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="./MainPage.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="ProjectExplanation">
+      <h2>HTML projects I created</h2>
+      <p>
+        This is the first project I did that had the theme of picking a fruit
+        you like and building a page about it And here is attached a scrolling
+        window where you can see the product
+      </p>
+    </section>
+    <div class="projects">
+      <div class="inframeProject">
+        <iframe
+          src="../HW1.HTML/HTML/HW1.html"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,250 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background-image: url("./images/backround_cream2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.active {
+  background-color: #dce1df;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+#entrance {
+  margin-top: 80px;
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover {
+  background-color: #f0f0f0;
+}
+nav li:first-child {
+  margin-right: auto;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+
+h1 {
+  font-size: 3em;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-shadow: 4px 4px 4px rgba(232, 238, 239, 0.2);
+}
+
+#sech1 {
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-shadow: 4px 4px 4px rgba(232, 238, 239, 0.2);
+}
+.image {
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  height: 350px;
+  width: 350px;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.info p {
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.Linkstosocials ul li a {
+  display: flex;
+  color: #7c795d;
+  font-family: "Trocchi", serif;
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 25px;
+  margin: 18;
+  list-style: none;
+}
+.Linkstosocials ul {
+  list-style: none;
+}
+.links h2 {
+  color: #7c795d;
+  font-family: "Trocchi", serif;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 10;
+}
+
+.Linkstosocials {
+  border: solid rgb(82 79 79);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 50px;
+  flex-wrap: wrap;
+  gap: 55px;
+  justify-content: center;
+  border: 2px solid #999;
+  
+}
+
+.card-content {
+  width: 200px;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.inframeProject {
+  max-width: 1200px; /* Set the maximum width of the container */
+  max-height: 1200px;
+  height: 60vh;
+  border: 2px solid #333;
+  overflow: hidden; /* Hide any content that exceeds the container */
+  border-radius: 10px;
+  width: 80%;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Remove the default iframe border */
+}
+
+#languagesUL {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Linkstosocials ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Linkstosocials ul a img {
+  border-radius: 50px;
+}
+.ProjectExplanation {
+  margin-top: 80px;
+}
+
+.ProjectExplanation h2 {
+  font-size: 2.5em;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  margin-left: 32%;
+}
+.ProjectExplanation p {
+  margin-left: 7%;
+}
+.languages {
+  text-align: center;
+  margin-top: 50px;
+}
+.Education {
+  text-align: center;
+  margin-top: 50px;
+}
+.volunteering {
+  text-align: center;
+  margin-top: 50px;
+}
+.aboutMe {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+li:hover {
+  transform: scale(1.05);
+}
+.menu-button {
+  display: none;
+}
+@media (max-width: 700px) {
+  .hideonmobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}

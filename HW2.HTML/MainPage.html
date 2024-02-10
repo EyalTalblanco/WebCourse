@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>"portg website"</title>
+    <link rel="stylesheet" href="./MainPage.css" />
+    <link />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </a>
+        </li>
+
+        <li><a href="./MainPage.html">Home</a></li>
+        <li><a href="./About.html">About</a></li>
+        <li><a href="./Project.html">Project</a></li>
+        <li><a href="./Skills.html">Skills</a></li>
+      </ul>
+
+      <ul >
+        <li><a href="./MainPage.html" class="active">Home</a></li>
+        <li class="hideonmobile"><a href="./About.html">About</a></li>
+        <li class="hideonmobile"><a href="./Project.html">Project</a></li>
+        <li class="hideonmobile"><a href="./Skills.html">Skills</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <img src="./menu.svg" >
+         
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="entrance">
+    <h1 >Eyal Tal Blanco</h1>
+    <h1 id="sech1">Third-year Industrial Engineering and Management student</h1></div>
+    <section class="info">
+      <img class="image" src="./images/myimage.jpeg" alt="myimage" /> <img />
+
+      <p>
+        As a third-year Industrial Engineering and Management student,<br />
+        I blend academic excellence witha hands-on mindset.<br />
+        With a passion for optimization, strong analytical skills, and a
+        proactiveapproach to learning,<br />
+        I am poised to contribute effectively to real-world challenges in the
+        field
+      </p>
+    </section>
+    <footer class="links">
+      <h2>links to social networks</h2>
+      <section class="Linkstosocials">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/eyal-tal-blanco-60ba2b29a/"
+              target="_blank"
+              ><img
+                src="./images/linkdean.png"
+                alt="linkedin"
+                width="50"
+                height="50"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/eyal.talblanco?locale=he_IL"
+              target="_blank"
+              ><img
+                src="./images/facebook.png"
+                alt="Facebook"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+          <li>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+              ><img
+                src="./images/Email_imageh.jpeg"
+                alt="Email"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+        
+                             }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
